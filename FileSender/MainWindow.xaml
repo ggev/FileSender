@@ -1,0 +1,31 @@
+﻿<Window x:Class="FileSender.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FileSender"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="663.866">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="113*"/>
+            <RowDefinition Height="306*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <TextBox Name="email" HorizontalAlignment="Left" Height="23" Margin="298,5,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="203" Grid.ColumnSpan="3" Grid.Row="1"/>
+        <TextBox Name="timer" HorizontalAlignment="Left" Height="23" Margin="298,44,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="203" Grid.ColumnSpan="3" Grid.Row="1"/>
+        <Label Content="Enter your email:" HorizontalAlignment="Left" Margin="153,5,0,0" VerticalAlignment="Top" Width="140" Grid.ColumnSpan="3" Grid.Row="1" Height="26"/>
+        <Label Content="Enter the send interval:" HorizontalAlignment="Left" Margin="153,44,0,0" VerticalAlignment="Top" Width="140" Grid.ColumnSpan="3" Grid.Row="1" Height="26"/>
+        <Label Content="Set folder path:" HorizontalAlignment="Left" Margin="153,86,0,0" VerticalAlignment="Top" Width="140" Grid.ColumnSpan="3" Grid.Row="1" Height="26"/>
+        <Button Content="Browse" HorizontalAlignment="Left" Margin="298,86,0,0" VerticalAlignment="Top" Width="71" Height="26" Click="Button_Click" Grid.ColumnSpan="3" Grid.Row="1"/>
+        <Button Content="Start" HorizontalAlignment="Left" Margin="254,152,0,0" VerticalAlignment="Top" Width="71" Height="21" Grid.ColumnSpan="3" Grid.Row="1" Click="Button_Click_1"/>
+        <Button Content="Stop" HorizontalAlignment="Left" Margin="344,152,0,0" VerticalAlignment="Top" Width="71" Height="21" RenderTransformOrigin="2.647,1.343" Grid.ColumnSpan="3" Grid.Row="1" Click="Button_Click_2"/>
+        <Label Content="Job is running..." Visibility="Hidden" Name="jobStatus"  Grid.ColumnSpan="3" HorizontalAlignment="Left" Margin="288,196,0,0" Grid.Row="1" VerticalAlignment="Top" Width="92" Height="26"/>
+
+
+    </Grid>
+</Window>
